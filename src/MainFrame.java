@@ -49,14 +49,10 @@ public class MainFrame extends JFrame {
     
 	public static void main(String[] args) throws Exception{
 		
-		System.setProperty("apple.laf.useScreenMenuBar", "true");
-		System.setProperty("com.apple.mrj.application.apple.menu.about.name", "AutoTyper (zst123)");
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				
 					MainFrame frame = new MainFrame();
-					// TRANSPARENCY VALUE IN A FLOAT // CURRENTLY 80%
-					frame.getRootPane().putClientProperty("Window.alpha", new Float(0.80f)); 
 					frame.setAlwaysOnTop(true);
 					frame.setVisible(true);
 			} });
